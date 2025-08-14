@@ -1,0 +1,151 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333333; 
+    color: #FFFFFF; 
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1200px; /* Max width for desktop */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+}
+
+/* Header Styling */
+.header {
+    width: 100%;
+    background-color: #000000; 
+    padding: 1rem 0; 
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+}
+
+.header h1 {
+    font-size: 1.25rem; 
+    font-weight: 700; 
+    padding: 0.5rem 1rem; 
+    color: #FFFFFF; 
+}
+
+.header-nav {
+    display: none;
+}
+
+.main-content {
+    padding-top: 5rem; 
+    padding-bottom: 2rem; 
+}
+
+.section-block {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    margin-top: 4rem; 
+    margin-bottom: 4rem; 
+    padding: 1.5rem; 
+    background-color: #333333; 
+    text-align: center; 
+}
+
+.section-image {
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.section-text {
+    width: 100%; 
+}
+
+.section-text h2 {
+    font-size: 1.875rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem;
+    color: #E0E0E0; 
+}
+
+.section-text p {
+    font-size: 1.125rem; 
+    color: #FFFFFF; 
+}
+
+
+.section-alt {
+    flex-direction: column-reverse; 
+}
+
+
+.footer {
+    background-color: #000000; 
+    color: #FFFFFF; 
+    text-align: center;
+    padding: 1.5rem; 
+    font-size: 0.875rem;
+}
+
+.footer .image-credit {
+    margin-top: 0.5rem; 
+}
+
+
+@media (min-width: 768px) {
+    .header-content {
+        justify-content: center; 
+    }
+    
+    */
+
+    .main-content {
+        padding-top: 6rem; 
+        padding-bottom: 3rem; 
+    }
+
+    .section-block {
+        flex-direction: row; 
+        gap: 3rem;
+        margin-top: 6rem; 
+        margin-bottom: 6rem; 
+        text-align: left; 
+    }
+
+    
+    .section-alt {
+        flex-direction: row-reverse;
+    }
+
+    .section-image,
+    .section-text {
+        width: 50%; 
+    }
+
+    .section-image img {
+        width: 100%; 
+    }
+
+    .header h1 {
+        font-size: 1.5rem; 
+    }
+}
